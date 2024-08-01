@@ -13,7 +13,7 @@
     background-color: green;
 }
 .inactive {
-    opacity: 0.3;
+    display: none;
 }
 footer {
     background-color: #1c73ff;

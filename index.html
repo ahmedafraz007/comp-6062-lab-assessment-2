@@ -14,10 +14,11 @@
             <p>Pressure: <strong>{{ pressure }}</strong></p>
             <input type="range" min="0" max="100" v-model="pressure">
             <div v-for="level in pressureLevels" :key="level.id"
-            :class="['indicator', level.color, { 'inactive': !isActive(level)}]">{{ level.label }}
-            </div>
+            :class="['indicator', level.color, { 'inactive': !isActive(level)
+            }]">{{ level.label }}</div>
+            
         </main>
-
+        <footer>{{ studentName }}</footer>
         <!-- Vue.JS CDN -->
         <script src="https://unpkg.com/vue@3.4.31/dist/vue.global.js"></script>
         <!-- Custom JavaScript File -->

@@ -3,8 +3,8 @@ const app = Vue.createApp({
     // Define the data for the app
     data() {
         return {
-            studentName: `afrz`,
-            pressure: 50,
+            studentName: `ahmed afraz backer`,
+            pressure: 65,
             pressureLevels: [
                  { id: 'danger-low', color: 'danger', label: 'Danger - Low!', min: 0, max: 10 },
                  { id: 'warn-low', color: 'warning', label: 'Warning - Low', min: 11, max:30 },
@@ -18,7 +18,7 @@ const app = Vue.createApp({
     methods: {
         isActive(level) {
             // Console.log level here to see the data structure, then check pressure against the current level and return TRUE or FALSE boolean
-            return this.pressure >= level.min && this.pressure <= level.max;
+            return (this.pressure>=level.min) && (this.pressure <= level.max);
         }
     }
 });
